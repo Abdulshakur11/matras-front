@@ -1,0 +1,22 @@
+.yil-list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .year-text {
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 141px;
+        text-align: center;
+        color: #01384D;
+        margin: 0;
+    }
+
+    .year-span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #01384D;
+    }
+}

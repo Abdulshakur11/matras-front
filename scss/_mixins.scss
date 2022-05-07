@@ -1,0 +1,49 @@
+// Ro'yxatdagi stillarni olib tashlash
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+// site link stillari
+@mixin reset-link {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+// Psevdoelementdagi uchburchak
+
+@mixin site-btn {
+  padding: 13px 28px;
+  background: #FFFFFF;
+  border: 2px solid #01384D;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+// Media so'rovlar uchun mixin
+
+@mixin breakpoint-down ($screen-width) {
+  @media only screen and (max-width: $screen-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up ($screen-width) {
+  @media only screen and (min-width: $screen-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-between ($min-screen, $max-screen) {
+  @media only screen and (min-width: $min-screen) and (max-width: $max-screen) {
+    @content;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+

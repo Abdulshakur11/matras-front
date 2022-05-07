@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Livvic:wght@400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Mulish:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Mebel</title>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<main>
+			<!-- HERO SECTION -->
+			<section class="hero">
+				<div class="container">
+					<nav class="d-flex nav">
+						<div class="logo">
+							<img src="./img/logo.svg" alt="site-logo" />
+						</div>
+						<div class="nav-lists">
+							<ul class="nav-list-link d-flex">
+								<li class="nav-link-item">
+									<a href="#">Katalog</a>
+								</li>
+								<li class="nav-link-item">
+									<a href="#">Aksiya</a>
+								</li>
+								<li class="nav-link-item">
+									<a href="#">Biz haqimizda</a>
+								</li>
+								<li class="nav-link-item">
+									<a href="#">Manzilimiz</a>
+								</li>
+								<li class="nav-link-item">
+									<a href="#">Aloqa</a>
+								</li>
+							</ul>
+							<ul class="nav-list-contact">
+								<li>
+									<a href="tel:+998901234567"
+										><i class="bi bi-telephone-fill"></i> +998 90 123 45 67</a
+									>
+								</li>
+								<li>
+									<button class="sity-btn btn-madal">Buyurtma berish</button>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<div
+						id="carouselExampleControls"
+						class="carousel slide"
+						data-bs-ride="carousel"
+					>
+						<button class="sity-btn category-btn">
+							Kategoriyalar <i class="bi bi-arrow-right"></i>
+						</button>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="hero-body d-flex">
+									<div class="hero-body-left">
+										<p class="title">Kechalari sokin dam oling</p>
+									</div>
+									<div class="hero-body-right">
+										<img
+											class="images"
+											src="./img/spani.png"
+											alt="divan"
+											width="705"
+											height="380"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleControls"
+							data-bs-slide="prev"
+						>
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleControls"
+							data-bs-slide="next"
+						>
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						<div class="progress-bar">
+							<div class="prog-bar-inner"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- STATUS SECTION -->
+			<section class="yil">
+				<div class="container">
+					<ul class="yil-list"></ul>
+				</div>
+			</section>
+			<!-- PRODUCT SECTION -->
+			<section class="product">
+				<div class="container">
+					<p class="product-title">Bizning mahsulotlar</p>
+				</div>
+				<div class="product-nav">
+					<div class="container">
+						<ul class="product-nav-list">
+							<li class="product-nav-item" data-id="all">Barchasi</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="container">
+					<ul class="product-card-list"></ul>
+					<h2 class="title-aksiya">Aksiyadagi mahsulotlar</h2>
+					<ul class="product-card-list product-card-aksiya-list"></ul>
+				</div>
+			</section>
+			<!-- TECNOLOGY SECTION -->
+			<section class="texnology">
+				<div class="container">
+					<h2 class="title-texnology">Ishlab chiqarish texnologiyalari</h2>
+					<ul class="texnology-list"></ul>
+					<ul class="midle-texnology-list">
+						<li class="midle-texnology-list-item">
+							<div>
+								<h3>Dream Cloud kompaniyasi haqida</h3>
+								<p>
+									Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a
+									est. Habitant adipiscing ut sed pulvinar tellus, ut urna, fermentum:
+								</p>
+								<ul>
+									<li>Penatibus viverra gravida rhoncus in.</li>
+									<li>Dolor integer in interdum viverra risus dolor enim.</li>
+									<li>
+										Turpis senectus eu, eget aenean nulla pellentesque sed ut tempor.
+									</li>
+								</ul>
+							</div>
+							<div>
+								<img src="./img/hona.png" alt="" />
+							</div>
+						</li>
+						<li class="midle-texnology-list-item">
+							<div>
+								<p>
+									Ac tortor volutpat pellentesque mauris nisi, praesent. Et tempus
+									accumsan est elementum feugiat arcu mauris tincidunt. Eget faucibus
+									pharetra et luctus eget ut fames. A cursus elementum egestas eu
+									scelerisque id.
+								</p>
+
+								<ol>
+									<li>Id risus phasellus laoreet eget. A nec pulvinar.</li>
+									<li>Eu justo, tincidunt fringilla diam nulla.</li>
+									<li>Amet, nullam cras lacus, fermentum leo tellus sagittis.</li>
+									<li>Facilisi mauris condimentum sagittis odio rhoncus semper.</li>
+								</ol>
+								<span>
+									Libero erat praesent ullamcorper eget tortor sed et. Nec id lobortis
+									gravida vitae. Scelerisque id fusce vitae ut. Integer sed vulputate sed
+									nec. Arcu id mattis erat et id.
+								</span>
+							</div>
+							<div>
+								<img src="./img/hona.png" alt="" />
+							</div>
+						</li>
+					</ul>
+
+					<h2 class="title-texnology">Nega bizni tanlashadi</h2>
+					<ul class="card-texnology">
+						<li>
+							<div class="card" style="width: 18rem">
+								<img class="card-img-top" src="./img/furgon.png" alt="Card image cap" />
+								<div class="card-body">
+									<h5 class="card-title">Yetkazib berish</h5>
+									<p class="card-text">
+										Toshkent bo'ylab bepul o'lchov va etkazib berish
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card" style="width: 18rem">
+								<img class="card-img-top" src="./img/furgon.png" alt="Card image cap" />
+								<div class="card-body">
+									<h5 class="card-title">Qo'llab-quvvatlash</h5>
+									<p class="card-text">
+										Bizning qo'llab-quvvatlash xizmati sizga har qanday savolda yordam
+										beradi va menejerlarning
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card" style="width: 18rem">
+								<img class="card-img-top" src="./img/furgon.png" alt="Card image cap" />
+								<div class="card-body">
+									<h5 class="card-title">Kafolat</h5>
+									<p class="card-text">
+										Biz matraslarimiz uchun 8 yilgacha kafolat beramiz. Agar matras kamida
+										25 mm qisqartirilsa.
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="address">
+						<div class="address__list address-list">
+							<div class="address-list__item address-list-item">
+								<h2 class="address-list-item__title">Manzilimiz</h2>
+								<div class="address-list-item__body address-body"></div>
+							</div>
+							<div class="n">
+								<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner inner">
+										<div class="carousel-item active">
+											<img class="slide-img" src="./img/address-section.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CUSTOMER SECTION -->
+			<section class="customer">
+				<div class="container">
+					<div class="customer__wrapper">
+						<div class="customer__text customer-text">
+							<h3 class="customer-text__header">Sizni qiziqtirdimi?</h3>
+							<p class="customer-text__text">
+								Raqamingizni qoldiring, biz sizga yana qo'ng'iroq qilamiz
+							</p>
+						</div>
+
+						<form class="customer__form customer-form">
+							<div class="customer-form__input-wrapper">
+								<input
+									class="customer-form__input"
+									type="text"
+									value="+998 | "
+									name="number"
+									placeholder="Raqamingizni yozing"
+								/>
+								<div class="error-input">Length should not be less than 13</div>
+							</div>
+							<button class="customer-form__btn customer-btn" type="submit">Yuborish</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="customer successfully-accepted">
+				<h3>Arizangiz muvaffaqiyatli qabul qilindi ✅</h3>
+				<p>Siz bilan tez orada bog’lanamiz 😊</p>
+			</section>
+			<!-- FOOTER SECTION -->
+			<section class="footer">
+				<div class="container">
+					<div class="footer__top footer-top">
+						<div class="footer-top__text">
+							<h4 class="footer-top__text--heading">Biz haqimizda</h4>
+							<h4 class="footer-top__text--heading">Katalog</h4>
+							<h4 class="footer-top__text--heading">Aksiya</h4>
+							<h4 class="footer-top__text--heading">Manzilimiz</h4>
+						</div>
+						<div class="footer-top__icons footer-top-icons">
+							<a class="footer-top-icons__link-img" href="#">
+								<img
+									class="footer-top-icons__img"
+									src="./img/Facebook.png"
+									alt="facebook"
+								/>
+							</a>
+							<a class="footer-top-icons__link-img" href="#">
+								<img
+									class="footer-top-icons__img"
+									src="./img/Twitter.png"
+									alt="twitter"
+								/>
+							</a>
+							<a class="footer-top-icons__link-img" href="#">
+								<img class="footer-top-icons__img" src="./img/Vimeo.png" alt="vimeo" />
+							</a>
+							<a class="footer-top-icons__link-img" href="#">
+								<img
+									class="footer-top-icons__img"
+									src="./img/Youtube.png"
+									alt="youtube"
+								/>
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom footer-bottom">
+						<div class="footer-bottom__text">
+							<p class="footer-bottom__text--text">
+								© 2021 Dream Cloud. Barcha huquqlar himoyalangan.
+							</p>
+						</div>
+						<div class="footer-bottom__arrow-up">
+							<a class="footer-bottom__arrow-up__link-img" href="#">
+								<img
+									class="footer-bottom__arrow-up__img"
+									src="./img/arrow-up.svg"
+									alt="arrow up"
+								/>
+							</a>
+						</div>
+						<div class="footer-bottom__copywriter">
+							<a class="footer-bottom__copywriter__link-img" href="#">
+								<img
+									class="footer-bottom__copywriter__img"
+									src="./img//vizitka.png"
+									alt="copywriter"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="modal-wrapper">
+				<div class="own-modal">
+					<span class="close"><img src="./img/Vector.png" alt="" /></span>
+					<h3 class="modal-title">Buyurtma qilish</h3>
+					<form class="form">
+						<input
+							class="modal-input"
+							name="username"
+							id="username"
+							type="text"
+							placeholder="Ismingizni yozing"
+							required
+						/>
+						<div class="modal-phone-wrap">
+							<label for="phone-number">+998</label>
+							<input
+								type="text"
+								name="phone_number"
+								id="phone-number"
+								placeholder="Raqamingizni yozing"
+								required
+							/>
+						</div>
+						<label class="choose-pr" for="choose-product"
+							>Mahsulotlarni toifasini tanlang</label
+						>
+						<select
+							class="select-op"
+							name="product_name"
+							id="choose-product"
+							required
+						>
+							<option value="choose" selected disabled hidden>Choose</option>
+						</select>
+
+						<label class="choose-pr">Miqdorni tanlang</label>
+						<div class="qountity-wrapper">
+							<button class="quontity-btn left-btn" type="button">&minus;</button>
+							<div class="quontity">1</div>
+							<button class="quontity-btn right-btn" type="button">&plus;</button>
+						</div>
+						<button class="send-btn" type="submit">Yuborish</button>
+					</form>
+				</div>
+
+				<div class="own-modal alert-modal">
+					<span class="close"><img src="./img/Vector.png" alt="" /></span>
+					<h3 class="alert-title">Arizangiz muvaffaqiyatli yuborildi</h3>
+					<img
+						class="alert-image"
+						src="./img/modal-img.png"
+						alt="alert-modal-image"
+					/>
+					<p class="alert-text">Tez orada operatorlarimiz siz bilan bog’lanishadi</p>
+					<button class="alert-btn">Ok</button>
+				</div>
+			</div>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/utils.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/status.js"></script>
+		<script src="./js/slider.js"></script>
+		<script src="./js/products.js"></script>
+		<script src="./js/techology.js"></script>
+		<script src="./js/address.js"></script>
+		<script src="./js/customers.js"></script>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+@import '../mixins';
+
+.hero {
+  background: #EABF9F;
+  padding-top: 19px;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav-list-link a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #01384D;
+}
+
+.nav-link-item {
+  margin-left: 50px;
+}
+
+.nav-list-contact {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #01384D;
+  }
+
+  button {
+    margin-left: 38px;
+  }
+}
+
+
+.sity-btn {
+  @include site-btn;
+}
+
+.category-btn {
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 105px;
+  color: #01384D;
+}
+
+.hero-line {
+  display: flex;
+  width: 250px;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 10px;
+margin-top: 100px;
+  
+}
+.hero-line::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #01384D;
+  border-radius: 10px;
+}
+.hero-body-right{
+  margin-top: 149px;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  height: 3px;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.prog-bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(62, 62, 62);
+}
