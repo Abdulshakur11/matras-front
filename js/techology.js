@@ -3,7 +3,8 @@ const elTechnologyList = document.querySelector(".texnology-list");
 fetch(`${API_URL}/technology`)
 	.then((res) => res.json())
 	.then((data) => {
-		technologies(data);
+		const filterTeachologies = data.filter(e => !e.isDelete);
+		technologies(filterTeachologies);
 
 		function technologies(arr) {
 			arr.forEach((e) => {

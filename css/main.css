@@ -990,13 +990,14 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1100px;
+  width: 1100px;
+  overflow: auto;
   margin: 0;
   padding: 0;
-  overflow: auto;
 }
 
 .product-nav-item {
+  width: 128px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -1006,7 +1007,7 @@ ul {
   z-index: 2;
   padding: 0;
   margin: 0;
-  padding: 13px 31px;
+  padding: 13px 0 13px 0;
 }
 
 .product-nav-item:hover {
@@ -1657,5 +1658,9 @@ input[type="number"]::-webkit-outer-spin-button {
   bottom: 34px;
   border: 10px solid;
   border-color: transparent transparent #ff0101 transparent;
+}
+
+.inner-location {
+  padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
